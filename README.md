@@ -6,60 +6,79 @@
   - [Pesquisa inicial de levantamento de informações](#pesquisa-inicial-de-levantamento-de-informações)
   - [Motivação pela escolha do escopo](#motivação-pela-escolha-do-escopo)
   - [Levantamento dos requisitos](#levantamento-dos-requisitos)
+  - [Tabelas](#tabelas)
 
 ## Definição de escopo
 
-Sistema de gerenciamento de jogos para campeonatos interclasse do IFRS Campus Canoas na modalidade de futsal.
+Sistema de gerenciamento de leituras.
 
 ## Potenciais usuários e suas necessidades
 
-O público alvo do sistema são os membros docentes e discentes do IFRS Campus Canoas.
-Os usuários poderão:
+O público alvo são leitores de literatura literária.
 
-- Participar de um campeonato:
-  - Visualizar tabela de classificação;
-  - Visualizar os jogos e seus respectivos horários e placares.
-- Criar um campeonato:
-  - Adicionar equipes e jogadores;
-  - Definir a organização do campeonato.
-
+- Adicionar arquivos de livros;
+- Visualizar leituras concluídas/em andamento/não iniciadas;
+- Visualizar autores;
+- Criar uma coleção de livros.
+  
 ## Pesquisa inicial de levantamento de informações
 
 Sistemas já existentes (disponíveis na PlayStore):
 
-- Copa Fácil: Criador de Torneio;
-- iFut;
-- Winner - Gerenciar torneios.
+- ReadEra
+- Skoob
 
 ## Motivação pela escolha do escopo
 
-Tendo em vista o último interclasse, pensei em desenvolver esse sistema para ajudar na organização e gerenciamento dos jogos para os torneios futuros aqui do campus.
+Visa organizar as leituras realizadas em Ebooks, pois facilita a portabilidade e manuseio ao longo da leitura. 
 
 ## Levantamento dos requisitos
 
-- Integração com o Moodle do IFRS Campus Canoas:
-  - Conseguir buscar os usuários docentes e discentes da instituição.
-- Criar, editar e excluir campeonato:
-  - Inserir nome;
-  - Definir forma de disputa;
-  - Criar equipe:
-    - Nome;
-    - Sigla.
-  - Adicionar, editar e excluir equipe:
-    - Adicionar e excluir jogadores da equipe.
-  - Gerar partidas de acordo com a forma de disputa por sorteio:
-    - Times;
-    - Local (editável);
-    - Horário (editável);
-    - Placar (editável);
-    - Gerar súmulas eletrônicas que vão sendo atualizadas durante o jogo.
-  - Gerar tabela de classificação:
-    - Número de jogos;
-    - Número de vitórias;
-    - Número de empates;
-    - Número de derrotas;
-    - Gols pró;
-    - Gols contra;
-    - Saldo de gols.
-- Visualizar os campeonatos aos quais o usuário faz parte:
-  - O usuário só pode entrar em um campeonato se for adicionado a uma equipe participante pelo organizador.
+- O usuário poderá editar, adicionar ou exluir arquivos de leitura;
+- O usuário poderá criar coleções com os ebooks;
+- O usuário pode adicionar a lista de leitura;
+- O usuário poderá favoritar suas leituras;
+- O usuário poderá visualizar as leituras concluídas/em andamento.
+
+## Tabelas
+
+- Usuário
+  - id
+  - nome
+  - email
+  - usuario
+  - senha
+- Livro
+  - id
+  - nome
+  - autor
+  - gênero
+  - edição
+  - editora
+  - ano
+  - sinopse
+  - status
+  - quantidade de páginas
+- Autor
+  - id
+  - nome
+  - naturalidade
+  - biografia
+- Coleção
+  - id
+  - nome
+- Gênero
+  - id
+  - nome
+  - descrição
+- Editora
+  - id
+  - nome
+  - site
+  - email
+  - telefone
+  - nacionalidade
+- Lista
+  - id
+- Favorito
+- Desejo
