@@ -3,7 +3,7 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": 0,
+    "scrollLeft": 688,
     "show": {
       "tableComment": false,
       "columnComment": false,
@@ -251,6 +251,29 @@
             "id": "be169900-cd6f-c06d-8d4e-e4ac45b32224"
           },
           {
+            "name": "idioma",
+            "comment": "",
+            "dataType": "VARCHAR2",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 67,
+              "widthDefault": 60
+            },
+            "id": "a7c493b6-5e9c-39a1-43b6-97c4a4f5b54b"
+          },
+          {
             "name": "sinopse",
             "comment": "",
             "dataType": "VARCHAR2",
@@ -347,7 +370,7 @@
           "active": false,
           "left": 806.7500052154062,
           "top": 386.77777071352375,
-          "zIndex": 626,
+          "zIndex": 698,
           "widthName": 60,
           "widthComment": 60
         },
@@ -453,8 +476,8 @@
         "ui": {
           "active": false,
           "left": 59.91666078898652,
-          "top": 370.36111141465324,
-          "zIndex": 574,
+          "top": 375.36111141465324,
+          "zIndex": 702,
           "widthName": 60,
           "widthComment": 60
         },
@@ -736,7 +759,7 @@
         "id": "d6c546f3-60b9-d3b0-46cf-02882bcd0f30"
       },
       {
-        "name": "Telefone",
+        "name": "Editora_Telefone",
         "comment": "",
         "columns": [
           {
@@ -813,39 +836,16 @@
           "active": false,
           "left": 1199.055548877628,
           "top": 745.4444211401324,
-          "zIndex": 676,
-          "widthName": 60,
+          "zIndex": 687,
+          "widthName": 103,
           "widthComment": 60
         },
         "id": "9aec9599-a767-9357-3a65-0d08478650cf"
       },
       {
-        "name": "Genero_Livro",
+        "name": "Livro_Genero",
         "comment": "",
         "columns": [
-          {
-            "name": "genero_id",
-            "comment": "",
-            "dataType": "NUMBER",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": true,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": true,
-              "widthName": 63,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "af8a1f64-92ae-5a4e-d6ec-a8ff7e3653e5"
-          },
           {
             "name": "livro_id",
             "comment": "",
@@ -868,24 +868,9 @@
               "widthDefault": 60
             },
             "id": "499c901a-e90f-5a7e-e6ec-dd12fc86c4f0"
-          }
-        ],
-        "ui": {
-          "active": false,
-          "left": 1231,
-          "top": 447,
-          "zIndex": 604,
-          "widthName": 83,
-          "widthComment": 60
-        },
-        "id": "4d53024e-b264-b697-a52e-4f7e27d11e03"
-      },
-      {
-        "name": "Autor_Livro",
-        "comment": "",
-        "columns": [
+          },
           {
-            "name": "autor_id",
+            "name": "genero_id",
             "comment": "",
             "dataType": "NUMBER",
             "default": "",
@@ -900,13 +885,28 @@
               "pk": false,
               "fk": false,
               "pfk": true,
-              "widthName": 60,
+              "widthName": 63,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "6967f121-cc8a-04d5-b2ad-e459791e221c"
-          },
+            "id": "af8a1f64-92ae-5a4e-d6ec-a8ff7e3653e5"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1231,
+          "top": 459,
+          "zIndex": 700,
+          "widthName": 83,
+          "widthComment": 60
+        },
+        "id": "4d53024e-b264-b697-a52e-4f7e27d11e03"
+      },
+      {
+        "name": "Livro_Autor",
+        "comment": "",
+        "columns": [
           {
             "name": "livro_id",
             "comment": "",
@@ -929,13 +929,36 @@
               "widthDefault": 60
             },
             "id": "4718bf99-3886-8a3c-f565-fa0c46156f1b"
+          },
+          {
+            "name": "autor_id",
+            "comment": "",
+            "dataType": "NUMBER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6967f121-cc8a-04d5-b2ad-e459791e221c"
           }
         ],
         "ui": {
           "active": false,
           "left": 408,
-          "top": 391,
-          "zIndex": 573,
+          "top": 396,
+          "zIndex": 703,
           "widthName": 72,
           "widthComment": 60
         },
@@ -1072,7 +1095,7 @@
             "0c3a0810-e3d4-7f46-73db-e7b4d0c8cb7c"
           ],
           "x": 934.2500052154062,
-          "y": 617.7777707135238,
+          "y": 638.2777707135238,
           "direction": "bottom"
         },
         "id": "c48e8a16-3883-7631-1482-0c110235b1d2",
@@ -1095,7 +1118,7 @@
             "af8a1f64-92ae-5a4e-d6ec-a8ff7e3653e5"
           ],
           "x": 1340.5,
-          "y": 447,
+          "y": 459,
           "direction": "top"
         },
         "id": "930b2db0-4ec5-a818-0ff9-4cb17e2e51dd",
@@ -1109,7 +1132,7 @@
             "3017cb35-9dbe-30e3-4641-cd4fa9d551af"
           ],
           "x": 1061.7500052154062,
-          "y": 502.27777071352375,
+          "y": 512.5277707135238,
           "direction": "right"
         },
         "end": {
@@ -1118,7 +1141,7 @@
             "499c901a-e90f-5a7e-e6ec-dd12fc86c4f0"
           ],
           "x": 1231,
-          "y": 501,
+          "y": 513,
           "direction": "left"
         },
         "id": "d723cdad-dc6b-52ce-3311-472e61460ff7",
@@ -1132,7 +1155,7 @@
             "0487fcd7-7a7f-fda1-6956-65da20567825"
           ],
           "x": 302.9166607889865,
-          "y": 444.86111141465324,
+          "y": 449.86111141465324,
           "direction": "right"
         },
         "end": {
@@ -1141,7 +1164,7 @@
             "6967f121-cc8a-04d5-b2ad-e459791e221c"
           ],
           "x": 408,
-          "y": 445,
+          "y": 450,
           "direction": "left"
         },
         "id": "975a85eb-08fe-7b69-9332-084510dd2ab9",
@@ -1155,7 +1178,7 @@
             "3017cb35-9dbe-30e3-4641-cd4fa9d551af"
           ],
           "x": 806.7500052154062,
-          "y": 444.52777071352375,
+          "y": 449.65277071352375,
           "direction": "left"
         },
         "end": {
@@ -1164,7 +1187,7 @@
             "4718bf99-3886-8a3c-f565-fa0c46156f1b"
           ],
           "x": 624,
-          "y": 445,
+          "y": 450,
           "direction": "right"
         },
         "id": "d0be7185-fb58-397e-d4f8-78a3167c0147",
@@ -1210,7 +1233,7 @@
             "64d6fb22-9172-fa5f-d516-b725177d717b"
           ],
           "x": 806.7500052154062,
-          "y": 560.0277707135238,
+          "y": 575.4027707135238,
           "direction": "left"
         },
         "id": "a10ed645-de9c-7cbc-e270-9b8bb2a92e99",
