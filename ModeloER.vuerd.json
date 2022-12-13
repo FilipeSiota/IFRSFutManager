@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -1,
-    "scrollLeft": -2,
+    "scrollTop": -63.66666666666668,
+    "scrollLeft": 0,
     "zoomLevel": 1,
     "show": {
       "tableComment": false,
@@ -164,11 +164,12 @@
         ],
         "ui": {
           "active": false,
-          "left": 405.472227051302,
-          "top": 93.36111141465328,
-          "zIndex": 4,
+          "left": 405.4722,
+          "top": 93.3611,
+          "zIndex": 68,
           "widthName": 60,
-          "widthComment": 60
+          "widthComment": 60,
+          "color": "#FF9800"
         },
         "visible": true,
         "id": "15450cab-1dec-cc26-2ac9-5f69d7a3f7c3"
@@ -389,9 +390,10 @@
           "active": false,
           "left": 806.7500052154062,
           "top": 386.77777071352375,
-          "zIndex": 6,
+          "zIndex": 69,
           "widthName": 60,
-          "widthComment": 60
+          "widthComment": 60,
+          "color": "#FF9800"
         },
         "visible": true,
         "id": "3a003709-badd-c1d0-80aa-532bf2d67227"
@@ -495,11 +497,12 @@
         ],
         "ui": {
           "active": false,
-          "left": 59.91666078898652,
-          "top": 375.36111141465324,
-          "zIndex": 7,
+          "left": 56.9167,
+          "top": 377.3611,
+          "zIndex": 70,
           "widthName": 60,
-          "widthComment": 60
+          "widthComment": 60,
+          "color": "#FF9800"
         },
         "visible": true,
         "id": "07853fd3-611c-4fb5-bad5-582b6e3ae825"
@@ -557,11 +560,12 @@
         ],
         "ui": {
           "active": false,
-          "left": 404.94443821244795,
-          "top": 618.0555488776281,
-          "zIndex": 8,
+          "left": 406.9444,
+          "top": 586.0555,
+          "zIndex": 73,
           "widthName": 60,
-          "widthComment": 60
+          "widthComment": 60,
+          "color": "#FF9800"
         },
         "visible": true,
         "id": "9802d047-1a45-40c2-6f07-e7d88c93f9e6"
@@ -644,9 +648,10 @@
           "active": false,
           "left": 1229.277771214644,
           "top": 185.52776599482286,
-          "zIndex": 5,
+          "zIndex": 74,
           "widthName": 60,
-          "widthComment": 60
+          "widthComment": 60,
+          "color": "#FF9800"
         },
         "visible": true,
         "id": "d8f34dc3-4c7a-5954-e00d-781d1f652005"
@@ -773,11 +778,12 @@
         ],
         "ui": {
           "active": false,
-          "left": 809.75,
-          "top": 725.25,
-          "zIndex": 9,
+          "left": 808.75,
+          "top": 752.25,
+          "zIndex": 71,
           "widthName": 60,
-          "widthComment": 60
+          "widthComment": 60,
+          "color": "#FF9800"
         },
         "visible": true,
         "id": "d6c546f3-60b9-d3b0-46cf-02882bcd0f30"
@@ -858,11 +864,12 @@
         ],
         "ui": {
           "active": false,
-          "left": 1199.055548877628,
-          "top": 745.4444211401324,
-          "zIndex": 10,
+          "left": 428.0555,
+          "top": 772.4444,
+          "zIndex": 75,
           "widthName": 103.34786987304688,
-          "widthComment": 60
+          "widthComment": 60,
+          "color": "#4CAF50"
         },
         "visible": true,
         "id": "9aec9599-a767-9357-3a65-0d08478650cf"
@@ -1101,6 +1108,92 @@
         },
         "visible": true,
         "id": "0f241739-239e-a3be-c037-0b45c08d1498"
+      },
+      {
+        "name": "Arquivo_Livro",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "NUMBER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "7918a634-138a-4f02-a573-81f24b08aa57"
+          },
+          {
+            "name": "livro_id",
+            "comment": "",
+            "dataType": "NUMBER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ace9317c-b71f-4f40-9ec4-caf02fe03f33"
+          },
+          {
+            "name": "arquivo",
+            "comment": "",
+            "dataType": "BLOB",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a67f0a44-73cc-4524-8fc1-c25a7339a71f"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 1301.3333,
+          "top": 734,
+          "zIndex": 79,
+          "widthName": 84.78388977050781,
+          "widthComment": 60,
+          "color": "#FF9800"
+        },
+        "visible": true,
+        "id": "fa927702-5ba8-461c-8cb2-0fcea5c0d912"
       }
     ],
     "indexes": []
@@ -1119,8 +1212,8 @@
           "columnIds": [
             "1d5eecc9-901b-e0e7-275c-2e342f58a781"
           ],
-          "x": 959.143424987793,
-          "y": 725.25,
+          "x": 958.143424987793,
+          "y": 752.25,
           "direction": "top"
         },
         "end": {
@@ -1172,7 +1265,7 @@
             "3017cb35-9dbe-30e3-4641-cd4fa9d551af"
           ],
           "x": 1110.1128744781015,
-          "y": 513.5277707135238,
+          "y": 450.15277071352375,
           "direction": "right"
         },
         "end": {
@@ -1197,8 +1290,8 @@
           "columnIds": [
             "0487fcd7-7a7f-fda1-6956-65da20567825"
           ],
-          "x": 351.04652834269746,
-          "y": 450.86111141465324,
+          "x": 348.04656755371093,
+          "y": 452.8611,
           "direction": "right"
         },
         "end": {
@@ -1249,18 +1342,18 @@
           "columnIds": [
             "1d5eecc9-901b-e0e7-275c-2e342f58a781"
           ],
-          "x": 1108.536849975586,
-          "y": 811,
-          "direction": "right"
+          "x": 808.75,
+          "y": 838,
+          "direction": "left"
         },
         "end": {
           "tableId": "9aec9599-a767-9357-3a65-0d08478650cf",
           "columnIds": [
             "e455ebb9-f939-7f7e-06a6-5408e4b16e3b"
           ],
-          "x": 1199.055548877628,
-          "y": 810.6944211401324,
-          "direction": "left"
+          "x": 702.1683540039062,
+          "y": 837.6944,
+          "direction": "right"
         },
         "constraintName": "",
         "visible": true,
@@ -1275,8 +1368,8 @@
           "columnIds": [
             "fd1b22d6-3e4d-844f-1dff-066a1887677e"
           ],
-          "x": 676.2953751020964,
-          "y": 673.0555488776281,
+          "x": 678.2953368896484,
+          "y": 641.0555,
           "direction": "right"
         },
         "end": {
@@ -1301,8 +1394,8 @@
           "columnIds": [
             "00e95026-292f-1c65-8783-53b50ea27dbc"
           ],
-          "x": 676.8231639409505,
-          "y": 179.1111114146533,
+          "x": 676.8231368896484,
+          "y": 179.1111,
           "direction": "right"
         },
         "end": {
@@ -1343,6 +1436,32 @@
         "constraintName": "",
         "visible": true,
         "id": "377a4863-bbae-9055-b996-31a1af65ae39"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "3a003709-badd-c1d0-80aa-532bf2d67227",
+          "columnIds": [
+            "3017cb35-9dbe-30e3-4641-cd4fa9d551af"
+          ],
+          "x": 1110.1128744781015,
+          "y": 576.9027707135238,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "fa927702-5ba8-461c-8cb2-0fcea5c0d912",
+          "columnIds": [
+            "ace9317c-b71f-4f40-9ec4-caf02fe03f33"
+          ],
+          "x": 1301.3333,
+          "y": 799.25,
+          "direction": "left"
+        },
+        "constraintName": "fk_livro_to_arquivo_livro",
+        "visible": true,
+        "id": "1b52dd6c-f14f-4e7e-8f3d-2d4ef9bfd8ba"
       }
     ]
   }
