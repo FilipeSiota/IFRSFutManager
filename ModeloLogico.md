@@ -10,6 +10,8 @@
 - Livro(<u>id</u>, nome, edicao, ano, idioma, sinopse, quant_paginas, editora_id, colecao_id)
     - _editora_id referencia Editora_
     - _colecao_id referencia Colecao_
+- Livro_Arquivo(<u>id</u>, livro_id)
+    - _livro_id referencia Livro_
 - Livro_Genero(<u>livro_id</u>, <u>genero_id</u>)
     - _livro_id referencia Livro_
     - _genero_id referencia Genero_
