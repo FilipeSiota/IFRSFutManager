@@ -41,6 +41,15 @@ INSERT INTO Colecao VALUES (1, 'Sherlock Holmes');
 -------------------------------
 
 INSERT INTO Editora (id, nome) VALUES (1, 'Principis');
+INSERT INTO Editora (id, nome) VALUES (2, 'Companhia da Letras');
+
+-------------------------------
+-- # RELACIONANDO EDITORAS E SEUS TELEFONES
+-------------------------------
+
+INSERT INTO Editora_Telefone VALUES (1, 1, '(51) 9-0000-0000');
+INSERT INTO Editora_Telefone VALUES (2, 1, '(54) 9-0000-0000');
+INSERT INTO Editora_Telefone VALUES (3, 1, '(48) 9-0000-0000');
 
 -------------------------------
 -- # LIVROS
