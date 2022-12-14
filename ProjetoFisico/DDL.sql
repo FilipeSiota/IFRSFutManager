@@ -92,23 +92,6 @@ CREATE TABLE Livro_Arquivo
 -- # TABELAS N:N
 -------------------------------
 
-CREATE TABLE Progresso_Leitura
-(
-    usuario_id      NUMBER          NOT NULL,
-    livro_id        NUMBER          NOT NULL,
-    pagina_atual    NUMBER          NOT NULL,
-    status          VARCHAR2(50)    NOT NULL,
-    
-    CONSTRAINT PK_Progresso_Leitura
-        PRIMARY KEY (usuario_id, livro_id),
-    CONSTRAINT FK_Usuario_TO_Progresso
-        FOREIGN KEY (usuario_id)
-        REFERENCES Usuario (id),
-    CONSTRAINT FK_Livro_TO_Progresso
-        FOREIGN KEY (livro_id)
-        REFERENCES Livro (id)
-);
-
 CREATE TABLE Livro_Autor
 (
     livro_id    NUMBER      NOT NULL,
@@ -137,6 +120,23 @@ CREATE TABLE Livro_Genero
     CONSTRAINT FK_Genero_TO_Livro_Genero
         FOREIGN KEY (genero_id)
         REFERENCES Genero (id)
+);
+
+CREATE TABLE Progresso_Leitura
+(
+    usuario_id      NUMBER          NOT NULL,
+    livro_id        NUMBER          NOT NULL,
+    pagina_atual    NUMBER          NOT NULL,
+    status          VARCHAR2(50)    NOT NULL,
+    
+    CONSTRAINT PK_Progresso_Leitura
+        PRIMARY KEY (usuario_id, livro_id),
+    CONSTRAINT FK_Usuario_TO_Progresso
+        FOREIGN KEY (usuario_id)
+        REFERENCES Usuario (id),
+    CONSTRAINT FK_Livro_TO_Progresso
+        FOREIGN KEY (livro_id)
+        REFERENCES Livro (id)
 );
 
 -------------------------------
