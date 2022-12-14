@@ -1,8 +1,7 @@
+    Desenvolvido por: Filipe Siota e Isadora Aguiar
+    Turma: DS3/2022
+
 # Trabalho de Banco de Dados
-
-Desenvolvido por: @FilipeSiota e @isa-Aguiar
-
-Turma: DS3/2022
 
 - [Trabalho de Banco de Dados](#trabalho-de-banco-de-dados)
   - [Definição de escopo](#definição-de-escopo)
@@ -71,4 +70,4 @@ Visa organizar as leituras realizadas em Ebooks, pois facilita a portabilidade e
 ## Comandos de consulta e views
 
 - [Clique aqui para visualizar os comandos DQL](./ProjetoFisico/DQL.sql)
-- [Clique aqui para baixar o PDF com os comandos e prints](./ProjetoFisico/DQL.pdf)
+- [Clique aqui para visualizar o PDF com os comandos e prints](./ProjetoFisico/DQL.pdf)
